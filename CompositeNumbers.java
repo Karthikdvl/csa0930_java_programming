@@ -1,31 +1,35 @@
+import java.util.Scanner;
+
 public class CompositeNumbers {
-    public static void main(String[] args) {
-
-        int[] array = {16, 18, 27, 16, 23, 21, 19};
-
-        int compositeCount = countCompositeNumbers(array);
-        System.out.println("Number of Composite Numbers = " + compositeCount);
-    }
 
     public static boolean isComposite(int num) {
-        if (num <= 1) {
-            return false;
-        }
+
         for (int i = 2; i <= Math.sqrt(num); i++) {
+           
             if (num % i == 0) {
+                
                 return true;
             }
         }
+     
         return false;
     }
 
-    public static int countCompositeNumbers(int[] array) {
-        int count = 0;
-        for (int num : array) {
-            if (isComposite(num)) {
-                count++;
+    public static void main(String[] args) {
+      
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Enter the value of A:");
+        int A = sc.nextInt();
+        System.out.println("Enter the value of B:");
+        int B = sc.nextInt();
+
+        System.out.println("The composite numbers between " + A + " and " + B + " are:");
+        for (int i = A; i <= B; i++) {
+            if (isComposite(i)) {
+                
+                System.out.print(i + " ");
             }
         }
-        return count;
     }
 }

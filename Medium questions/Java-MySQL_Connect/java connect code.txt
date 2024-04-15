@@ -1,0 +1,46 @@
+Microsoft Windows [Version 10.0.19045.2311]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\user\OneDrive\Documents\Mysql\Java-MySQL_Connect>javac -cp mysql-connector-java-5.1.49-bin.jar;. DBConnect.java
+
+C:\Users\user\OneDrive\Documents\Mysql\Java-MySQL_Connect>java -cp mysql-connector-java-5.1.49-bin.jar;. DBConnect
+Table created
+
+C:\Users\user\OneDrive\Documents\Mysql\Java-MySQL_Connect>
+
+mysql> use karthik;
+Database changed
+
+mysql> show tables;
++-------------------+
+| Tables_in_karthik |
++-------------------+
+| book_company      |
+| edept             |
+| employee1         |
+| faculty           |
+| javalab           |
+| marks             |
+| marks_view        |
+| mdept             |
+| mentees           |
+| mentees1          |
+| movies            |
+| per               |
+| student           |
+| studepartment     |
+| teacher           |
+| teacherdept       |
++-------------------+
+16 rows in set (0.00 sec)
+
+
+mysql> desc javalab;
++---------+----------+------+-----+---------+-------+
+| Field   | Type     | Null | Key | Default | Extra |
++---------+----------+------+-----+---------+-------+
+| name    | tinytext | YES  |     | NULL    |       |
+| surname | tinytext | YES  |     | NULL    |       |
+| city    | tinytext | YES  |     | NULL    |       |
++---------+----------+------+-----+---------+-------+
+3 rows in set (0.00 sec)

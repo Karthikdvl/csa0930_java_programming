@@ -1,0 +1,20 @@
+			Connecting with mysql database
+
+1:- Create DB "dbtest2" in mysql db.
+
+2:- Go to your java folder where you will store your program. 
+
+3:- Store your program in that folder and save using .java extension.Copy the code and save.
+
+4:- Set class path to make sure your java program run smoothly.
+
+5:- Store mysql-connector in the same folder. 
+
+6:- Use the following command to run your java file.
+
+-->  javac -cp mysql-connector-java-5.1.49-bin.jar;. DBConnect.java
+
+-->  java -cp mysql-connector-java-5.1.49-bin.jar;. DBConnect
+
+So table is created that means connection to db is successful.
+
